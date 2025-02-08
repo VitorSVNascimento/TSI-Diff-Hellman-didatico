@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Demonstração da Troca de Chaves Diffie-Hellman</title>
+    <!-- Importando o Font Awesome via CDN -->
+<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+      <!-- Cabeçalho com navegação -->
+      <header>
+        <nav>
+            <ul>
+                <li><a href="#intro">Início</a></li>
+                <li><a href="#info">O Algoritmo</a></li>
+                <li><a href="#advantages">Prós & Contras</a></li>
+                <li><a href="#calculation">Cálculo</a></li>
+                <li><a href="#team">Sobre Nós</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Seção de Introdução -->
+    <section id="intro" class="parallax">
+        <h1>Diffie-Hellman: Segurança na Comunicação</h1>
+        <p>Descubra como funciona um dos principais protocolos de troca de chaves criptográficas!</p>
+    </section>
+
+<!-- Seção Informativa -->
+<section id="info">
+    <div class="container">
+        <h2>O algoritmo de Diffie-Hellman</h2>
+        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Explicabo consequatur et praesentium error fugiat accusamus fuga doloremque aspernatur. Tempore quo reprehenderit maxime mollitia alias dolorem, itaque eum nam culpa at!</p>
+        
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam, quas est. Magni, voluptatem ea magnam nobis soluta omnis illo praesentium laudantium ad quisquam, nulla ipsam libero perspiciatis laboriosam mollitia similique.</p>
+        
+        <h3>Tópico 1</h3>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae quam corrupti voluptas, pariatur molestias incidunt molestiae, a ad deserunt minima ipsum sit. Rerum voluptatum voluptatem numquam porro consequuntur reiciendis sint!</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae quam corrupti voluptas, pariatur molestias incidunt molestiae, a ad deserunt minima ipsum sit. Rerum voluptatum voluptatem numquam porro consequuntur reiciendis sint!</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae quam corrupti voluptas, pariatur molestias incidunt molestiae, a ad deserunt minima ipsum sit. Rerum voluptatum voluptatem numquam porro consequuntur reiciendis sint!</p>
+        <p>3. As duas partes trocam suas chaves públicas e, utilizando suas chaves privadas, podem calcular a chave secreta compartilhada:</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae quam corrupti voluptas, pariatur molestias incidunt molestiae, a ad deserunt minima ipsum sit. Rerum voluptatum voluptatem numquam porro consequuntur reiciendis sint!</p>
+        <h3>Imagens</h3>
+        <div class="info-images">
+            <div class="info-image">
+                <img src="https://via.placeholder.com/400x300" alt="Imagem 1">
+                <p>Legenda.</p>
+            </div>
+            <div class="info-image">
+                <img src="https://via.placeholder.com/400x300" alt="Imagem 2">
+                <p>Legenda.</p>
+            </div>
+        </div>
+        
+        <p>Com isso, mesmo que um atacante tenha interceptado as chaves públicas trocadas, ele não conseguirá calcular a chave secreta compartilhada sem conhecer os segredos privados das partes envolvidas.</p>
+        
+        <h3>Topico 3</h3>
+        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Qui reiciendis praesentium nemo totam quaerat libero sunt doloremque nihil fugiat velit. Nulla, repellat unde? Rem laboriosam, repellendus error ut corrupti perferendis!</p>
+        <ul>
+            <li>Lorem ipsum dolor sit..</li>
+            <li>Lorem ipsum dolor sit..</li>
+            <li>Lorem ipsum dolor sit..</li>
+        </ul>
+    </div>
+</section>
+
+    <!-- Seção de Vantagens e Desvantagens -->
+<!-- Seção Vantagens e Desvantagens -->
+<!-- Seção Vantagens e Desvantagens -->
+<section id="advantages">
+    <h2 id="advantages-and-disadvantages-title">Vantagens & Desvantagens</h2>
+    <div class="container">
+        <!-- Vantagens -->
+        <div class="advantages">
+            <h3>✅ Vantagens</h3>
+            <div class="row">
+                <div class="card">
+                    <i class="fas fa-shield-alt"></i> <!-- Ícone representando segurança -->
+                    <h4>Segurança na troca de chaves</h4>
+                    <p>A troca de chaves é feita de maneira segura, sem a necessidade de um canal seguro.</p>
+                </div>
+                <div class="card">
+                    <i class="fas fa-link"></i> <!-- Ícone representando conexão -->
+                    <h4>Não exige chave prévia</h4>
+                    <p>Não é necessário compartilhar uma chave previamente, o que aumenta a segurança.</p>
+                </div>
+                <div class="card">
+                    <i class="fas fa-lock"></i> <!-- Ícone representando criptografia -->
+                    <h4>Usado em protocolos como TLS</h4>
+                    <p>Este algoritmo é amplamente utilizado em protocolos de segurança como o TLS.</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Desvantagens -->
+        <div class="disadvantages">
+            <h3>❌ Desvantagens</h3>
+            <div class="row">
+                <div class="card">
+                    <i class="fas fa-exclamation-triangle"></i> <!-- Ícone representando risco -->
+                    <h4>Suscetível a ataques MITM</h4>
+                    <p>Pode ser vulnerável a ataques de intermediários, onde um terceiro tenta interceptar a comunicação.</p>
+                </div>
+                <div class="card">
+                    <i class="fas fa-user-shield"></i> <!-- Ícone representando falta de autenticação -->
+                    <h4>Não autentica as partes envolvidas</h4>
+                    <p>Não fornece autenticação das partes que estão se comunicando, tornando o sistema vulnerável a ataques.</p>
+                </div>
+                <div class="card">
+                    <i class="fas fa-cogs"></i> <!-- Ícone representando complexidade -->
+                    <h4>Depende de grandes números primos</h4>
+                    <p>O algoritmo depende do uso de grandes números primos, o que pode ser complexo e exigir muitos recursos computacionais.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+<!-- Seção da conta -->
+
+    <section id="calculation">
+
+
+        <div class="container">
+            <h1 id="title-calc">Demonstração da Troca de Chaves Diffie-Hellman</h1>
+            
+            <div class="input-section">
+                <div class="input-row">
+                    <div class="input-group">
+                        <label for="prime">Número primo (p):</label>
+                        <select id="prime"></select>
+                    </div>
+                    <div class="input-group">
+                        <label for="integer">Inteiro (g):</label>
+                        <input type="number" id="integer" min="2" max="255" value="5">
+                    </div>
+                </div>
+                
+                <div class="input-row">
+                    <div class="input-group">
+                        <label for="participant1Name">Nome do Participante 1:</label>
+                        <input type="text" id="participant1Name" value="Alice">
+                    </div>
+                    <div class="input-group">
+                        <label for="participant1Secret">Segredo do Participante 1 (a):</label>
+                        <input type="number" id="participant1Secret" min="1" max="255" value="6">
+                    </div>
+                </div>
+                
+                <div class="input-row">
+                    <div class="input-group">
+                        <label for="participant2Name">Nome do Participante 2:</label>
+                        <input type="text" id="participant2Name" value="Bob">
+                    </div>
+                    <div class="input-group">
+                        <label for="participant2Secret">Segredo do Participante 2 (b):</label>
+                        <input type="number" id="participant2Secret" min="1" max="255" value="15">
+                    </div>
+                </div>
+                
+                <button onclick="calculateDiffieHellman()">Calcular</button>
+            </div>
+    
+            <div class="steps-container">
+                <div class="step" id="step1">
+                    <h2>Passo 1: Parâmetros Públicos</h2>
+                    <p>Número primo (p): <span id="step1-prime"></span></p>
+                    <p>Inteiro (g): <span id="step1-integer"></span></p>
+                    <p class="formula">Fórmula: Para começar vamos usar p e g como parametros públicos</p>
+                </div>
+    
+                <div class="step" id="step2">
+                    <h2>Passo 2: Cálculo do Participante 1</h2>
+                    <p>Nome: <span id="step2-participant1-name"></span></p>
+                    <p>Segredo (a): <span id="step2-participant1-secret"></span></p>
+                    <p>Chave pública (A): <span id="step2-participant1-public"></span></p>
+                    <p class="formula">Fórmula: A = g<sup>a</sup> mod p</p>
+                </div>
+    
+                <div class="step" id="step3">
+                    <h2>Passo 3: Cálculo do Participante 2</h2>
+                    <p>Nome: <span id="step3-participant2-name"></span></p>
+                    <p>Segredo (b): <span id="step3-participant2-secret"></span></p>
+                    <p>Chave pública (B): <span id="step3-participant2-public"></span></p>
+                    <p class="formula">Fórmula: B = g<sup>b</sup> mod p</p>
+                </div>
+    
+                <div class="step" id="step4">
+                    <h2>Passo 4: Cálculo do Segredo Compartilhado</h2>
+                    <p>Chave privada do Participante 1: <span class="private-key-result" id="step4-participant1-shared"></span></p>
+                    <p>Chave Privada do Participante 2: <span class="private-key-result" id="step4-participant2-shared"></span></p>
+                    <p class="formula">Fórmula para Participante 1: s = B<sup>a</sup> mod p</p>
+                    <p class="formula">Fórmula para Participante 2: s = A<sup>b</sup> mod p</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+   <!-- Team Section -->
+   <section class="team" id="team">
+    <h2>Desenvolvedores</h2>
+    <div class="team-container">
+        <div class="team-member">
+            <a href="https://github.com/LeticiaKOSilva" target="_blank">
+                <img src="https://avatars.githubusercontent.com/u/129966396?v=4" alt="Desenvolvedor 3">
+                <h3>Leticia Oliveira</h3>
+            </a>
+            <p>Frontend and backend developer</p>
+        </div>
+        <div class="team-member">
+            <a href="https://github.com/VitorSVNascimento" target="_blank">
+                <img src="https://avatars.githubusercontent.com/u/82065313?v=4" alt="Desenvolvedor 1">
+                <h3>Vitor Nascimento</h3>
+            </a>
+            <p>Frontend and backend developer</p>
+        </div>
+
+    </div>
+</section>
+    <script src="script.js"></script>
+</body>
+</html>
+
