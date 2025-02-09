@@ -70,8 +70,8 @@ function isPrime(num) {
     const participant2SharedSecret = modPow(A, b, p)
     document.getElementById("step4-participant1-shared").textContent = participant1SharedSecret
     document.getElementById("step4-participant2-shared").textContent = participant2SharedSecret
-    document.getElementById("step4-formula1").innerHTML = `Fórmula para Participante 1: s = ${B}<sup>${a}</sup> mod ${p}`;
-    document.getElementById("step4-formula2").innerHTML = `Fórmula para Participante 2: s = ${A}<sup>${b}</sup> mod ${p}`;
+    document.getElementById("calc-p1").innerHTML = `${B}<sup>${a}</sup> mod ${p}`;
+    document.getElementById("calc-p2").innerHTML = `${A}<sup>${b}</sup> mod ${p}`;
   }
 
   window.addEventListener('scroll', function() {

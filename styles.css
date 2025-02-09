@@ -13,6 +13,11 @@
   --title-color: #000000;
 }
 
+#calc-p1,#calc-p2{
+
+  font-weight: bold;
+}
+
 /* Header section */
 header {
   display: flex;
