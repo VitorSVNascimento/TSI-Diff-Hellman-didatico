@@ -46,7 +46,7 @@ function isPrime(num) {
     const b = Number.parseInt(document.getElementById("participant2Secret").value)
     const participant1Name = document.getElementById("participant1Name").value || "Participante 1"
     const participant2Name = document.getElementById("participant2Name").value || "Participante 2"
-  
+
     // Passo 1: Parâmetros Públicos
     document.getElementById("step1-prime").textContent = p
     document.getElementById("step1-integer").textContent = g
@@ -56,18 +56,22 @@ function isPrime(num) {
     document.getElementById("step2-participant1-name").textContent = participant1Name
     document.getElementById("step2-participant1-secret").textContent = a
     document.getElementById("step2-participant1-public").textContent = A
+    document.getElementById("step2-formula").innerHTML = `Fórmula: A = ${g}<sup>${a}</sup> mod ${p}`;
   
     // Passo 3: Cálculo do Participante 2
     const B = modPow(g, b, p)
     document.getElementById("step3-participant2-name").textContent = participant2Name
     document.getElementById("step3-participant2-secret").textContent = b
     document.getElementById("step3-participant2-public").textContent = B
+    document.getElementById("step3-formula").innerHTML = `Fórmula: B = ${g}<sup>${b}</sup> mod ${p}`;
   
     // Passo 4: Cálculo do Segredo Compartilhado
     const participant1SharedSecret = modPow(B, a, p)
     const participant2SharedSecret = modPow(A, b, p)
     document.getElementById("step4-participant1-shared").textContent = participant1SharedSecret
     document.getElementById("step4-participant2-shared").textContent = participant2SharedSecret
+    document.getElementById("step4-formula1").innerHTML = `Fórmula para Participante 1: s = ${B}<sup>${a}</sup> mod ${p}`;
+    document.getElementById("step4-formula2").innerHTML = `Fórmula para Participante 2: s = ${A}<sup>${b}</sup> mod ${p}`;
   }
 
   window.addEventListener('scroll', function() {
