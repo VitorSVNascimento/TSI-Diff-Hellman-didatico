@@ -1,4 +1,4 @@
-# TSI-Diff-Hellman_didatico
- Explicação didática sobre o algoritimo diff hellman
+# TSI-Diffie-Hellman_didatico
+ Explicação didática sobre o algoritimo Diffie-Hellman
 # Site desenvolvido
-[Diff-Hellman didático](http://vitorsvnascimento.github.io/TSI-Diff-Hellman-didatico/)
+[Diffie-Hellman didático](http://vitorsvnascimento.github.io/TSI-Diff-Hellman-didatico/)
