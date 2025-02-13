@@ -53,6 +53,11 @@ header h1 {
   color: var(--white);
 }
 
+#error-row{
+  color: #f00;
+  display: block;
+}
+
 nav ul {
   list-style: none;
   margin: 0;

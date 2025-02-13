@@ -40,12 +40,39 @@ function isPrime(num) {
   }
   
   function calculateDiffieHellman() {
+
+    const error_g = document.getElementById('error-g');
+    const error_a = document.getElementById('error-a');
+    const error_b = document.getElementById('error-b');
+    
+    error_a.style.display='none';
+    error_b.style.display='none';
+    error_g.style.display='none';
+    error_value = 0;
     const p = Number.parseInt(document.getElementById("prime").value)
     const g = Number.parseInt(document.getElementById("integer").value)
     const a = Number.parseInt(document.getElementById("participant1Secret").value)
     const b = Number.parseInt(document.getElementById("participant2Secret").value)
     const participant1Name = document.getElementById("participant1Name").value || "Participante 1"
     const participant2Name = document.getElementById("participant2Name").value || "Participante 2"
+
+    if(g <= 1 || Number.isNaN(g)){
+      error_g.style.display = 'block';
+      error_value=1;
+    }
+
+    if(a <= 0 || Number.isNaN(a)){
+      error_a.style.display = 'block';
+      error_value=1;
+    }
+
+    if(b <= 0 || Number.isNaN(b)){
+      error_b.style.display = 'block';
+      error_value=1;
+    }
+    if(error_value==1)
+      return;
+
 
     // Passo 1: Parâmetros Públicos
     document.getElementById("step1-prime").textContent = p
